@@ -19,6 +19,7 @@ const HomePage = () => {
         </div>
       </div>
     </div>
+    // <Sidebar2/>
   );
 };
 export default HomePage;

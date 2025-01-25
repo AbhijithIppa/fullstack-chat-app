@@ -40,3 +40,5 @@ server.listen(PORT, () => {
   console.log("server is running on PORT:" + PORT);
   connectDB();
 });
+export const createApp = app;
+export default server;

@@ -1,0 +1,20 @@
+{
+    "SignUpPageRequirements": {
+      "InputFields": {
+        "FullName": "Label should be 'Full Name'.",
+        "Email": "Label should be 'Email'.",
+        "Password": "Label should be 'Password'."
+      },
+      "ButtonsAndLinks": {
+        "SubmitButton": "Button text should be 'Create Account'.",
+        "SignInLink": "Text should be 'Sign In' to navigate to the login page."
+      },
+      "Accessibility": {
+        "PasswordToggle": "Use an appropriate aria-label for the password visibility toggle."
+      },
+      "Features": {
+        "PasswordVisibilityToggle": "Provide a toggle to change the password field visibility between 'text' and 'password'."
+      }
+    }
+  }
+  

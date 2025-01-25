@@ -48,14 +48,14 @@ const SignUpPage = () => {
               >
                 <MessageSquare className="size-6 text-primary" />
               </div>
-              <h1 className="text-2xl font-bold mt-2">Create Account</h1>
+              <h1 className="text-2xl font-bold mt-2">Create Account Below</h1>
               <p className="text-base-content/60">Get started with your free account</p>
             </div>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="form-control">
-              <label className="label">
+              <label className="label" htmlFor="fullName">
                 <span className="label-text font-medium">Full Name</span>
               </label>
               <div className="relative">
@@ -63,6 +63,7 @@ const SignUpPage = () => {
                   <User className="size-5 text-base-content/40" />
                 </div>
                 <input
+                id="fullName"
                   type="text"
                   className={`input input-bordered w-full pl-10`}
                   placeholder="John Doe"
@@ -73,7 +74,7 @@ const SignUpPage = () => {
             </div>
 
             <div className="form-control">
-              <label className="label">
+              <label className="label" htmlFor="email">
                 <span className="label-text font-medium">Email</span>
               </label>
               <div className="relative">
@@ -81,6 +82,7 @@ const SignUpPage = () => {
                   <Mail className="size-5 text-base-content/40" />
                 </div>
                 <input
+                id="email"
                   type="email"
                   className={`input input-bordered w-full pl-10`}
                   placeholder="you@example.com"
@@ -91,7 +93,7 @@ const SignUpPage = () => {
             </div>
 
             <div className="form-control">
-              <label className="label">
+              <label className="label" htmlFor="password">
                 <span className="label-text font-medium">Password</span>
               </label>
               <div className="relative">
@@ -99,6 +101,7 @@ const SignUpPage = () => {
                   <Lock className="size-5 text-base-content/40" />
                 </div>
                 <input
+                id="password"
                   type={showPassword ? "text" : "password"}
                   className={`input input-bordered w-full pl-10`}
                   placeholder="••••••••"
@@ -107,6 +110,7 @@ const SignUpPage = () => {
                 />
                 <button
                   type="button"
+                  aria-label="Toggle"
                   className="absolute inset-y-0 right-0 pr-3 flex items-center"
                   onClick={() => setShowPassword(!showPassword)}
                 >
